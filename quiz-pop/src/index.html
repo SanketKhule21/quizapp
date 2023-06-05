@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Quiz App</h1>
+    <div class="topics">
+      <h2 class="heading">Select a Topic</h2>
+      <div class="topicMain">
+      <button class="topic-btn" onclick="startQuiz('music')">Music</button>
+      <button class="topic-btn" onclick="startQuiz('art')">Modern Art</button>
+      <button class="topic-btn" onclick="startQuiz('coding')">Coding</button>
+    </div>
+    </div>
+
+    <div class="quiz">
+      <h2 class="question"></h2>
+      <div class="options"></div>
+      <div class="buttons">
+        <button class="btn" onclick="prevQuestion()" disabled>Previous</button>
+        <button class="btn" onclick="nextQuestion()">Next</button>
+      </div>
+    </div>
+
+    <div class="report">
+      <p></p>
+      <button class="home-btn" onclick="goToHome()">Home</button>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
